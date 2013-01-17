@@ -1,0 +1,92 @@
+
+/**
+ *	Header CSS
+ *
+ *	@author		Andrej Babic
+ */
+
+
+@keyframes bounce {
+	from { top: -10px; }
+	to { top: 5px; }
+}
+
+@-moz-keyframes bounce {
+	from { top: -10px; }
+	to { top: 5px; }
+}
+
+@-webkit-keyframes bounce {
+	from { top: -10px; }
+	to { top: 5px; }
+}
+
+.git {
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 99;
+
+	.img {
+		overflow: hidden;
+		text-indent: -900px;
+		.sprite_git;
+	}
+}
+
+.outer {
+	background: transparent url(../images/static/header_bg.jpg) repeat-x;
+	height: 320px;
+	width: 100%;
+}
+
+.up {
+
+	.outer {
+		margin-top: -210px;
+	}
+
+	.ribbon{
+		cursor: s-resize;
+		margin-top: -10px;
+	}
+}
+
+.cssanimations .up .ribbon.animate {
+	.animation(bounce, .5s);
+}
+
+.main_header {
+	position: relative;
+	min-height: 135px;
+
+	hgroup {
+		height: 105px;
+
+		.page_title {
+			font: 40pt 'Oleo Script Swash Caps', cursive, Arial;
+			margin: 0;
+			color: #e8e8e8;
+			text-shadow: #333 2px 2px 0;
+			position: absolute;
+			bottom: 9px;
+		}
+
+		.subheader {
+			font: 10pt Arial, Tahoma, sans-serif;
+			margin-top: 4px;
+			color: #444;
+			position: absolute;
+			bottom: 0;
+			margin: 0;
+		}
+	}
+
+	.ribbon {
+		.sprite_header_ribbon;
+		position: absolute;
+		left: 53px;
+	}
+
+}
+

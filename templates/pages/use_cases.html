@@ -1,0 +1,98 @@
+
+{% extends "include/main.html" %}
+
+{% block title %} {{ page_title }} {% endblock %}
+
+{% block content %}
+<h2>Behind the scenes</h2>
+<article>
+	<header>
+			<h3>Workflow</h3>
+	</header>
+	<div class="grid_7 alpha">
+		<p>
+			So how where these projects created?
+		</p>
+		<p>
+			All projects are made in 4 steps, some smaller than others.
+		</p>
+		<ol>
+			<li>
+				The first step is to draw a sketch on paper. Some doodling just to get the idea of the concept you're trying to build. With a client involved, this is a perfect way to see if both parties have understood the task ahead.
+			</li>
+			<li>
+				The next step is to convert it into a mockup on the computer. This is often more extensive than the sketching. It is easier to continue the work in Photoshop when having a base of sketches and mockups.
+			</li>
+			<li>
+				The third step is where the magic happens. Here, the sketches and mockups come to life! This step is usually recursive and requires quite a few retakes before it gets right.
+			</li>
+			<li>
+				The fourth and final step is slicing and converting the PSD file from previous step into a website.
+			</li>
+		</ol>
+		<p>
+			The projects listed below are all personal where I did all the work. There was no client involved.
+		</p>
+	</div>
+	<aside class="grid_3 omega">
+		<figure>
+			<img src="{{ url_for('static', filename='images/static/paintbrushes.jpg') }}" width="120" height="120" alt="" />
+			<figcaption>First sketch</figcaption>
+		</figure>
+	</aside>
+</article>
+<article>
+	<header>
+			<h3>Portfolio</h3>
+	</header>
+	<div class="grid_7 alpha">
+		<figure>
+			<a href="{{ url_for('static', filename='images/static/bts_portfolio.jpg') }}" target="_blank" title="Portfolio behind the scenes">
+				<img src="{{ url_for('static', filename='images/static/bts_portfolio_thumb.jpg') }}" alt="" width="396" height="300" />
+			</a>
+			<figcaption>Portfolio mockup</figcaption>
+		</figure>
+		<p>
+			The portfolio is a website that shows my knowledge in web development.
+		</p>
+		<p>
+			Built with LESS, CSS3, HTML5, Modernizr, jQuery, 960 grid system, jQuery history, AJAX.
+		</p>
+		<p>
+			View the full <a href="{{ url_for('static', filename='images/static/bts_portfolio.jpg') }}" target="_blank" title="Portfolio behind the scenes">portfolio workflow</a>.
+		</p>
+	</div>
+</article>
+<article>
+	<header>
+			<h3>Dirty Chat</h3>
+	</header>
+	<div class="grid_7 alpha">
+		<p>
+			Dirty chat is a chat service where people can in a quick and easy way connect to other people through their browser. Everyone connect to the same chat channel and can freely chat with each other. All conversation is open for all visitors.
+		</p>
+		<p>
+			This application is built in Python with the Django framework. The database consists of MongoDB. The frontend is built with HTML5, CSS3, javascript and AJAX.
+		</p>
+		<p>
+			There is no demo available online, but you can view the source code by checking out my repo at <a href="http://git.bluecap.se/guest/overview" class="external" target="_blank" title="Go to my git repo">git.bluecap.se</a>
+		</p>
+	</div>
+</article>
+<article>
+	<header>
+			<h3>Backgammon</h3>
+	</header>
+	<div class="grid_7 alpha">
+		<p>
+			This project is a webbased Backgammon game that can be played by two people. The game was built to test the limits of HTML5 and CSS3 capability in the browser.
+		</p>
+		<p>
+			The game is built in HTML5, CSS3, canvas and Javascript.
+		</p>
+		<p>
+			View <a href="http://bluecap.se/demo/backgammon/" title="Backgammon demo" class="external" target="_blank">demo online</a>
+	</div>
+</article>
+{% endblock %}
+

@@ -1,0 +1,209 @@
+
+/**
+ *	Body CSS
+ *
+ *	@author		Andrej Babic
+ */
+
+
+.wrapper {
+	min-height: 100%;
+	position: relative;
+}
+
+.main {
+	margin: 150px 0 50px 0;
+
+	/* External links */
+	.external {
+		background: url(../images/static/external.gif) no-repeat scroll right 2px transparent;
+		padding: 0 15px 0 0;
+	}
+
+	header {
+		overflow: hidden;
+		margin: 0 auto;
+		float: none;
+		display: block;
+
+		.left,
+		.right {
+			margin-top: 10px;
+		}
+
+		.left {
+			.sprite_title_icon_left;
+			float: left;
+		}
+
+		.book_title {
+			font: italic 34pt Georgia, Helvetica, sans-serif;
+			text-align: center;
+			text-shadow: #7C7C7C 1px 1px 0;
+			padding-left: 30px;
+			display: inline;
+		}
+
+		.right {
+			.sprite_title_icon_right;
+			float: right;
+		}
+	}
+
+	nav {
+		.sprite_bookshelf;
+		margin: 90px auto 0 auto;
+	}
+
+	.menu {
+		position: relative;
+
+		a {
+			display: block;
+			text-indent: -990px;
+			overflow: hidden;
+			position: absolute;
+		}
+
+		.work {
+			left: 133px;
+			top: 15px;
+			width: 52px;
+			height: 216px;
+		}
+
+		.bts {
+			left: 239px;
+			top: 11px;
+			width: 76px;
+			height: 221px;
+		}
+
+		.git {
+			left: 376px;
+			top: 12px;
+			width: 88px;
+			height: 220px;
+		}
+
+		.about {
+			left: 540px;
+			top: 16px;
+			width: 68px;
+			height: 216px;
+		}
+
+		.projects {
+			left: 646px;
+			top: 17px;
+			width: 30px;
+			height: 217px;
+		}
+	}
+
+	.gallery {
+		li {
+			float: left;
+			width: 33%;
+		}
+
+		img {
+			width: 130px;
+			height: 90px;
+		}
+	}
+
+	.main_content {
+		margin: 40px auto 0 auto;
+		display: block;
+		float: none;
+
+		article {
+			overflow: hidden;
+		}
+
+		h2 {
+			font-weight: bold;
+			font-size: 30pt;
+			margin: 0;
+		}
+
+		h2,
+		h3,
+		h4 {
+			text-shadow: 0 1px 0 #fff;
+		}
+
+		h3 {
+			font-size: 20pt;
+			margin: 25px 0 0 0;
+		}
+
+		h4 {
+			margin-bottom: -10px;
+		}
+
+		ol,
+		ul {
+			padding: 0;
+			list-style-type: none;
+		}
+
+		figure {
+			margin-top: 1em;
+			padding: 1px;
+			border: 1px solid #ccc;
+			overflow: hidden;
+			position: relative;
+
+			img {
+				float: left;
+			}
+
+			&:hover > figcaption {
+				bottom: 1px;
+			}
+
+			figcaption {
+				position: absolute;
+				bottom: -25px;
+				text-align: center;
+				width: 396px;
+				font: 9pt Arial, Helvetica, sans-serif;
+				background: #333;
+				padding: 4px 0;
+				color: #fff;
+				.transition(bottom, .3s);
+				.opaticy(.8);
+			}
+		}
+
+		aside {
+			margin-top: 20px;
+			float: right;
+			
+			figure {
+				float: right;
+				margin: 0
+			}
+
+			figcaption {
+				width: 120px;
+			}
+		}
+
+		p,
+		li {
+			font: 11pt Arial, Tahoma, Verdana;
+			color: #575757;
+			line-height: 21px;
+			margin: 1.25em 0;
+		}
+	}
+
+	.company-list .item {
+		text-align: center;
+	}
+
+}
+

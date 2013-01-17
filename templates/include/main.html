@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <title>Andrej's Portfolio {% block title %}{% endblock %}</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps:400">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/static/favicon.ico') }}" />
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+</head>
+<body id="body" class="up">
+
+    <div class="git">
+        <a href="http://git.bluecap.se/guest/overview" target="_blank" title="My Git repo" class="img">View my Git repo</a>
+    </div>
+
+    <div class="wrapper">
+
+        <div class="outer">
+            <div class="container_16 img book">
+                <div class="grid_7 alpha prefix_1">
+                    <p>Hmm... so reverse psychology works on you?</p>
+                    <p>Then don't <b>hire me</b>, and don't <b>use the form</b> on the right!</p>
+                </div>
+                <form action="http://www.bluecap.se/portfolio/email" method="post" class="grid_8 omega">
+                    <fieldset>
+                        <legend class="hide">Contact me by email</legend>
+                        <input type="text" name="name" class="name placeholder" id="frm_name" placeholder="Name:" required />
+                        <input type="text" name="email" class="email placeholder" id="frm_email" placeholder="E-mail:" required />
+                        <textarea name="msg" cols="40" rows="4" class="msg placeholder" id="frm_msg" placeholder="Message:"></textarea>
+                        <input type="submit" value="Contact!" class="submit" />
+                    </fieldset>
+                </form>
+            </div>
+        
+            <header class="container_16 main_header">
+                <div class="img ribbon animate" id="ribbon"></div>
+                <hgroup class="grid_13 push_2 alpha" itemscope itemtype="http://schema.org/Person">
+                    <h1 class="page_title" itemprop="name">Andrej Babic</h1>
+                    <h2 class="subheader" itemprop="jobTitle">Passioned developer with an eye for design and UX</h2>
+                </hgroup>
+            </header>
+        </div>
+
+        <div class="container_16">
+            <section class="main grid_16">
+                <header class="grid_12">
+                    <span class="img left"></span>
+                    <span class="img right"></span>
+                    <h2 class="book_title">Choose something to read</h2>
+                </header>
+                <nav class="img">
+                    <ul class="menu">
+                        <li>
+                            <a href="{{ base_url }}my-work-experience/" class="work" title="My work experience">My work experience</a>
+                        </li>
+                        <li>
+                            <a href="{{ base_url }}behind-the-scenes/" class="bts" title="Behind the scenes">Behind the scenes</a>
+                        </li>
+                        <li>
+                            <a href="http://git.bluecap.se/" target="_blank" class="git" title="My Git repo">My Git repo</a>
+                        </li>
+                        <li>
+                            <a href="{{ base_url }}about-me/" class="about" title="About me">About me</a>
+                        </li>
+                        <li>
+                            <a href="{{ base_url }}my-projects/" class="projects" title="My projects">My projects</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="main_content grid_10" id="content">
+                    {% block content %}{% endblock %}
+                </div>
+            </section>
+        </div>
+
+        <footer class="footer rep">
+            <div class="container_16">
+                <nav class="inner">
+                    <ul class="menu">
+                        <li><a href="{{ base_url }}my-work-experience/" title="My work experience">Work</a></li>
+                        <li><a href="{{ base_url }}about-me/" title="About me">About</a></li>
+                        <li>&nbsp;<a href="http://bluecap.se/" title="Bluecap" class="img icon">Bluecap</a></li>
+                        <li><a href="{{ base_url }}behind-the-scenes/" title="Behind the scenes">Behind the scenes</a></li>
+                        <li><a href="{{ base_url }}my-projects/" title="My projects">Projects</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+
+    </div>
+
+    <script async="true" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script async="true" src="{{ url_for('static', filename='js/all.min.js') }}"></script>
+    <script>var _gaq=_gaq || [];_gaq.push(['_setAccount', 'UA-8420579-3']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();</script>
+
+</body>
+</html>

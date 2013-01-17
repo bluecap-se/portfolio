@@ -1,0 +1,14 @@
+--- 
+applications: 
+  .: 
+    name: portofolio
+    instances: 1
+    url: ${name}.${target-base}
+    infra: eu-aws
+    framework: 
+      name: wsgi
+      info: 
+        exec: 
+        mem: 64M
+        description: Python WSGI Application
+    mem: 64M

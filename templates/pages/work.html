@@ -1,0 +1,103 @@
+{% extends "include/main.html" %}
+
+{% block title %} {{ page_title }} {% endblock %}
+
+{% block content %}
+<h2>My work experience</h2>
+<article>
+    <header>
+        <h3>Companies</h3>
+    </header>
+    <div class="grid_7 alpha">
+        <ol class="company-list">
+            <li class="item">
+                <a href="http://www.virtusize.com" target="_blank" title="Virtusize">
+                    <img src="{{ url_for('static', filename='images/static/company_virtusize.png') }}" width="337" height="96" alt="Virtusize" />
+                </a>
+            </li>
+            <li class="item">
+                <a href="http://www.blocket.se" target="_blank" title="Blocket">
+                    <img src="{{ url_for('static', filename='images/static/company_blocket.png') }}" width="337" height="96" alt="Blocket" />
+                </a>
+            </li>
+            <li class="item">
+                <a href="http://www.bluecap.se" target="_blank" title="Bluecap">
+                    <img src="{{ url_for('static', filename='images/static/company_bluecap.png') }}" width="337" height="96" alt="Bluecap" />
+                </a>
+            </li>
+            <li class="item">
+                <a href="http://www.academicwork.com" target="_blank" title="Academic Work">
+                    <img src="{{ url_for('static', filename='images/static/company_aw.png') }}" width="337" height="110" alt="Academic Work" />
+                </a>
+            </li>
+        </ol>
+    </div>
+    <aside class="grid_3 omega">
+        <figure>
+            <img src="{{ url_for('static', filename='images/static/hacker.png') }}" width="120" height="120" alt="" />
+            <figcaption>Hacker</figcaption>
+        </figure>
+    </aside>
+</article>
+
+<article>
+    <header>
+        <h3>Mixtape</h3>
+    </header>
+    <div class="grid_7 alpha">
+        <ul class="gallery">
+            <li>
+                <a rel="work_blocket" href="{{ url_for('static', filename='images/static/shopping_clothing.png') }}" title="Advanced clothing category">
+                    <img src="{{ url_for('static', filename='images/static/shopping_clothing.png') }}" alt="Advanced clothing category" />
+                </a>
+            </li>
+            <li>
+                <a rel="work_blocket" href="{{ url_for('static', filename='images/static/shopping_iphone.png') }}" title="Responsive design, iPhone">
+                    <img src="{{ url_for('static', filename='images/static/shopping_iphone.png') }}" alt="Responsive design, iPhone" />
+                </a>
+            </li>
+            <li>
+                <a rel="work_blocket" href="{{ url_for('static', filename='images/static/shopping_ipad.png') }}" title="Responsive design, iPad">
+                    <img src="{{ url_for('static', filename='images/static/shopping_ipad.png') }}" alt="Responsive design, iPad" />
+                </a>
+            </li>
+        </ul>
+
+        <ul class="gallery">
+            <li>
+                <a rel="work_bluecap" href="{{ url_for('static', filename='images/static/blu1.png') }}" title="Calendar">
+                    <img src="{{ url_for('static', filename='images/static/blu1.png') }}" alt="Bluecap calendar" />
+                </a>
+            </li>
+            <li>
+                <a rel="work_bluecap" href="{{ url_for('static', filename='images/static/blu2.png') }}" title="Calendar again">
+                    <img src="{{ url_for('static', filename='images/static/blu2.png') }}" alt="Bluecap calendar, advanced functions" />
+                </a>
+            </li>
+            <li>
+                <a rel="work_bluecap" href="{{ url_for('static', filename='images/static/blu3.png') }}" title="Touch screen system">
+                    <img src="{{ url_for('static', filename='images/static/blu3.png') }}" alt="Bluecap touch screen system" />
+                </a>
+            </li>
+        </ul>
+
+        <ul class="gallery">
+            <li>
+                <a rel="work_awork" href="{{ url_for('static', filename='images/static/ac1.png') }}" title="Index page">
+                    <img src="{{ url_for('static', filename='images/static/ac1.png') }}" alt="Index page" />
+                </a>
+            </li>
+            <li>
+                <a rel="work_awork" href="{{ url_for('static', filename='images/static/ac2.png') }}" title="CMS, change the external menu">
+                    <img src="{{ url_for('static', filename='images/static/ac2.png') }}" alt="CMS, change the external menu" />
+                </a>
+            </li>
+            <li>
+                <a rel="work_awork" href="{{ url_for('static', filename='images/static/ac3.png') }}" title="CMS, handle news and newsletters">
+                    <img src="{{ url_for('static', filename='images/static/ac3.png') }}" alt="CMS, handle news and newsletters" />
+                </a>
+            </li>
+        </ul>
+    </div>
+</article>
+{% endblock %}
