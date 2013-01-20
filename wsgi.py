@@ -5,7 +5,7 @@ from flask import Flask, abort, render_template
 from flask.ext.assets import Environment
 
 
-app = Flask(__name__)
+application = app = Flask(__name__)
 assets = Environment(app)
 assets.init_app(app)
 
@@ -38,4 +38,4 @@ def pages(page, ajax):
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)

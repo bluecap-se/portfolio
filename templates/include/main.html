@@ -1,3 +1,4 @@
+{% if not include %}
 <!DOCTYPE html>
 <html class="no-js">
 <head>
@@ -15,7 +16,6 @@
 </head>
 <body id="body" class="up">
 
-    {% if not include %}
     <div class="git">
         <a href="http://git.bluecap.se/guest/overview" target="_blank" title="My Git repo" class="img">View my Git repo</a>
     </div>
@@ -110,7 +110,7 @@
     {% endassets %}
 
     <script>var _gaq=_gaq || [];_gaq.push(['_setAccount', 'UA-8420579-3']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();</script>
-    {% endif %}
 
 </body>
 </html>
+{% endif %}
