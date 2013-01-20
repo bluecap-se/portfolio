@@ -5,7 +5,7 @@
  *	@author		Andrej Babic
  */
 
-;(function($) {
+;(function($, Modernizr) {
 	"use strict";
 
 	var Bluecap = {
@@ -153,4 +153,4 @@
 
 	$(document).ready(Bluecap.init);
 
-})(jQuery);
+})(jQuery, Modernizr);
