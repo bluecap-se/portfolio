@@ -6,13 +6,16 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps:400">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
     <link rel="shortcut icon" href="{{ url_for('static', filename='images/static/favicon.ico') }}" />
+    {% assets filters="less,cssmin", output="static/main.%(version)s.css", "css/main.less" %}
+    <link rel="stylesheet" href="{{ ASSET_URL }}" />
+    {% endassets %}
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
 </head>
 <body id="body" class="up">
 
+    {% if not include %}
     <div class="git">
         <a href="http://git.bluecap.se/guest/overview" target="_blank" title="My Git repo" class="img">View my Git repo</a>
     </div>
@@ -72,7 +75,9 @@
                     </ul>
                 </nav>
                 <div class="main_content grid_10" id="content">
+                    {% endif %}
                     {% block content %}{% endblock %}
+                    {% if not include %}
                 </div>
             </section>
         </div>
@@ -96,6 +101,7 @@
     <script async="true" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script async="true" src="{{ url_for('static', filename='js/all.min.js') }}"></script>
     <script>var _gaq=_gaq || [];_gaq.push(['_setAccount', 'UA-8420579-3']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();</script>
+    {% endif %}
 
 </body>
 </html>
