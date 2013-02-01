@@ -32,9 +32,9 @@
 				})
 				.done(function(msg){
 					$content.html(msg);
-					document.title = "Portfolio - " + title;
 					$.scrollTo("#content", 500);
 					History.pushState(null, null, href);
+					document.title = "Portfolio - " + title;
 				})
 				.fail(function() {
 					window.location.href = href;
