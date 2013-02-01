@@ -12,6 +12,7 @@ setup(
     install_requires=[
         'flask==0.9',
         'flask-assets==0.8',
+        'configobj',
 
         'closure',
         'cssmin'
