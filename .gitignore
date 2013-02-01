@@ -3,6 +3,6 @@
 *.pyc
 portofolio.egg-info/
 
-static/static/
-static/.webassets-cache/
+app/static/static/
+app/static/.webassets-cache/
 
