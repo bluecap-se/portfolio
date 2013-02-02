@@ -22,7 +22,8 @@ class FlaskServer(object):
     def create_app(self, config, app_name):
         self.app = Flask(app_name)
         self.app.config.update(config[app_name].dict())
-        self.app.jinja_env.add_extension('app.jinja2htmlcompress.HTMLCompress')
+        if not self.debug:
+            self.app.jinja_env.add_extension('app.jinja2htmlcompress.HTMLCompress')
 
     def register_blueprints(self):
         self.app.register_blueprint(bp, url_prefix='')
