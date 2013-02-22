@@ -59,20 +59,10 @@
 				$ribbon.animate({top: "10px"}, 500, anim_up);
 			}
 
-
 			// Image gallery
-			$(".gallery a")
-			.bind("click", function(e) {
-				e.preventDefault();
-				e.stopPropagation();
-			})
-			.fancybox({
-				'transitionIn'	: 'none',
-				'transitionOut'	: 'none',
-				'titlePosition' : 'under',
-				'titleFormat'	: function(title, currentArray, currentIndex, currentOpts) {
-					return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
-				}
+			$(".gallery a").fancybox({
+				openEffect	: 'none',
+				closeEffect	: 'none'
 			});
 
 		},

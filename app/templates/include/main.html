@@ -100,10 +100,10 @@
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     {% assets filters="closure_js", output="static/main.%(version)s.js",
+        "js/jquery-fancybox.min.js",
         "js/jquery-history.min.js",
         "js/jquery-scrollto.min.js",
         "js/jquery-placeholder.min.js",
-        "js/jquery-fancybox.min.js",
         "js/javascript.js"
     %}
     <script src="{{ ASSET_URL }}"></script>
