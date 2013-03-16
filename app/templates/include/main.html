@@ -55,7 +55,7 @@
                     <span class="img right"></span>
                     <h2 class="book_title">Choose something to read</h2>
                 </header>
-                <nav class="img">
+                <nav class="img" role="navigation">
                     <ul class="menu">
                         <li>
                             <a href="{{ base_url }}my-work-experience/" class="work" title="My work experience">My work experience</a>
@@ -74,17 +74,17 @@
                         </li>
                     </ul>
                 </nav>
-                <div class="main_content grid_10" id="content">
+                <section class="main_content grid_10" id="content" role="main">
                     {% endif %}
                     {% block content %}{% endblock %}
                     {% if not include %}
-                </div>
+                </section>
             </section>
         </div>
 
-        <footer class="footer rep">
+        <footer class="footer rep" role="contentinfo">
             <div class="container_16">
-                <nav class="inner">
+                <nav class="inner" role="navigation">
                     <ul class="menu">
                         <li><a href="{{ base_url }}my-work-experience/" title="My work experience">Work</a></li>
                         <li><a href="{{ base_url }}about-me/" title="About me">About</a></li>
