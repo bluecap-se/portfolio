@@ -23,6 +23,8 @@ class FlaskServer(object):
     def create_app(self, config, app_name):
         self.app = Flask(app_name)
         self.app.config.update(config[app_name].dict())
+        self.app.debug = self.debug
+        self.app.config['SECRET_KEY'] = self.config['server'].get('key')
         if not self.debug:
             self.app.jinja_env.add_extension('app.jinja2htmlcompress.HTMLCompress')
 
@@ -35,5 +37,4 @@ class FlaskServer(object):
         assets.debug = self.debug
 
     def run(self):
-        self.app.run(debug=self.debug, use_reloader=self.debug,
-                     use_debugger=self.debug, request_handler=TimedRequestHandler)
+        self.app.run(use_reloader=self.debug, request_handler=TimedRequestHandler)
