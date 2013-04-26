@@ -4,6 +4,7 @@ from flask import Flask
 from flask.ext.assets import Environment
 from app.config import config
 from app.flask_app import bp
+from app.serve import TimedRequestHandler
 
 
 class FlaskServer(object):
@@ -34,4 +35,5 @@ class FlaskServer(object):
         assets.debug = self.debug
 
     def run(self):
-        self.app.run(debug=self.debug, use_reloader=self.debug, use_debugger=self.debug)
+        self.app.run(debug=self.debug, use_reloader=self.debug,
+                     use_debugger=self.debug, request_handler=TimedRequestHandler)
