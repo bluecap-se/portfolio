@@ -1,5 +1,4 @@
-flask==0.10
-jinja2==2.7
+flask==0.10.1
 flask-assets==0.8
 flask-debugtoolbar
 configobj
