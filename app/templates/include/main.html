@@ -12,12 +12,14 @@
     <link rel="stylesheet" href="{{ ASSET_URL }}" />
     {% endassets %}
 
-    <script src="{{ url_for('static', filename='js/modernizr.min.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 </head>
 <body id="body" class="up">
 
-    <div class="git">
-        <a href="http://git.bluecap.se/guest/overview" target="_blank" title="My Git repo" class="img">View my Git repo</a>
+    <div class="github-fork-ribbon-wrapper">
+        <div class="github-fork-ribbon">
+            <a href="https://www.github.com/bluecap-se/" target="_blank" title="Fork me on GitHub">Fork me on GitHub</a>
+        </div>
     </div>
 
     <div class="wrapper">
@@ -38,7 +40,7 @@
                     </fieldset>
                 </form>
             </div>
-        
+
             <header class="container_16 main_header">
                 <div class="img ribbon animate" id="ribbon"></div>
                 <hgroup class="grid_13 push_2 alpha" itemscope itemtype="http://schema.org/Person">
@@ -98,8 +100,8 @@
 
     </div>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    {% assets filters="closure_js", output="static/main.%(version)s.js",
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    {% assets filters="jsmin", output="static/main.%(version)s.js",
         "js/jquery-fancybox.min.js",
         "js/jquery-history.min.js",
         "js/jquery-scrollto.min.js",

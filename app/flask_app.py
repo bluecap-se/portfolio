@@ -18,10 +18,11 @@ PAGES = {
 @bp.route('/<page>/<ajax>/', methods=['GET'])
 @bp.route('/<page>/', methods=['GET'], defaults={'ajax': False})
 def pages(page, ajax):
-    if not page in PAGES:
+
+    if page not in PAGES:
         return abort(404)
 
-    (tmpl, title) = PAGES[page]
+    tmpl, title = PAGES[page]
     keys = {
         'include': ajax is not False,
         'base_url': config.get('app').get('base_dir'),
