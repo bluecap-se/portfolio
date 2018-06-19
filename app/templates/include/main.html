@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps:400">
     <link rel="shortcut icon" href="{{ url_for('static', filename='images/static/favicon.ico') }}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
     {% assets filters="less,cssmin", output="static/main.%(version)s.css", "css/main.less" %}
     <link rel="stylesheet" href="{{ ASSET_URL }}" />
     {% endassets %}
