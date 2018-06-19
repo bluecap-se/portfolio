@@ -12,20 +12,16 @@
 }
 
 .border-radius(@radius: 3px) {
-	-webkit-border-radius: @radius;
-	-moz-border-radius: @radius;
-	border-radius: @radius;		
+	border-radius: @radius;
 }
 
 .outline-radius(@radius: 3px) {
 	-webkit-outline-radius: @radius;
 	-moz-outline-radius: @radius;
-	outline-radius: @radius;		
+	outline-radius: @radius;
 }
 
 .box-shadow(@x: 2px, @y: 2px, @blur: 5px, @spread: 0, @color: rgba(0,0,0,.6)) {
-	-webkit-box-shadow: @x @y @blur @spread @color;
-	-moz-box-shadow: @x @y @blur @spread @color;	
 	box-shadow: @x @y @blur @spread @color;	
 }
 
@@ -34,7 +30,7 @@
 	-moz-transition: @what @length @easing;
 	-o-transition: @what @length @easing;
 	-ms-transition: @what @length @easing;
-	transition: @what @length @easing;			
+	transition: @what @length @easing;
 }
 
 .transform(@params) {
@@ -47,7 +43,7 @@
 
 .box(@orient: horizontal, @pack: center, @align: center) {
 	display: -webkit-box;
-	display: -moz-box;	
+	display: -moz-box;
 	display: box;
 
 	-webkit-box-orient: @orient;
@@ -56,11 +52,11 @@
 
 	-webkit-box-pack: @pack;
 	-moz-box-pack: @pack;
-	box-pack: @pack;		
-			
+	box-pack: @pack;
+
 	-webkit-box-align: @align;
 	-moz-box-align: @align;
-	box-align: @align;		
+	box-align: @align;
 }
 
 .flex(@val: 1) {
