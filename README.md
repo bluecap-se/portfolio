@@ -26,4 +26,4 @@ $ python wsgi.py
 
 ## License
 
-Published under [Apache 2.0 License](https://github.com/bluecap-se/sneak/portfolio/master/LICENSE).
+Published under [MIT License](https://github.com/bluecap-se/sneak/portfolio/master/LICENSE).
