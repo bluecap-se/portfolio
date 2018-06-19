@@ -5,6 +5,6 @@ from setuptools import setup
 
 setup(
     name='portofolio',
-    version='1.1.0',
+    version='0.0.1',
     author='bluecap',
 )
