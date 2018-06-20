@@ -12,6 +12,8 @@
     {% assets filters="less,cssmin", output="static/main.%(version)s.css", "css/main.less" %}
     <link rel="stylesheet" href="{{ ASSET_URL }}" />
     {% endassets %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" />
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 </head>
@@ -19,7 +21,7 @@
 
     <div class="github-fork-ribbon-wrapper">
         <div class="github-fork-ribbon">
-            <a href="https://www.github.com/bluecap-se/" target="_blank" title="Fork me on GitHub">Fork me on GitHub</a>
+            <a href="https://github.com/bluecap-se/" target="_blank" title="Fork me on GitHub">Fork me on GitHub</a>
         </div>
     </div>
 
@@ -31,7 +33,7 @@
                     <p>Hmm... so reverse psychology works on you?</p>
                     <p>Then don't&nbsp;<b>hire me</b>, and don't&nbsp;<b>use the form</b>&nbsp;on the right!</p>
                 </div>
-                <form action="http://www.bluecap.se/portfolio/email" method="post" class="grid_8 omega">
+                <form action="https://www.bluecap.se/portfolio/email" method="post" class="grid_8 omega">
                     <fieldset>
                         <legend class="hide">Contact me by email</legend>
                         <input type="text" name="name" class="name placeholder" id="frm_name" placeholder="Name:" required />
@@ -44,7 +46,7 @@
 
             <header class="container_16 main_header">
                 <div class="img ribbon animate" id="ribbon"></div>
-                <hgroup class="grid_13 push_2 alpha" itemscope itemtype="http://schema.org/Person">
+                <hgroup class="grid_13 push_2 alpha" itemscope itemtype="https://schema.org/Person">
                     <h1 class="page_title" itemprop="name">Andrej Babic</h1>
                     <h2 class="subheader" itemprop="jobTitle">Passioned engineer with an eye for design and UX</h2>
                 </hgroup>
@@ -67,7 +69,7 @@
                             <a href="{{ base_url }}behind-the-scenes/" class="bts" title="Behind the scenes">Behind the scenes</a>
                         </li>
                         <li>
-                            <a href="http://git.bluecap.se/" target="_blank" class="git" title="My Git repo">My Git repo</a>
+                            <a href="https://github.com/bluecap-se/" target="_blank" class="git" title="My Git repo">My Git repo</a>
                         </li>
                         <li>
                             <a href="{{ base_url }}about-me/" class="about" title="About me">About me</a>
@@ -91,7 +93,7 @@
                     <ul class="menu">
                         <li><a href="{{ base_url }}my-work-experience/" title="My work experience">Work</a></li>
                         <li><a href="{{ base_url }}about-me/" title="About me">About</a></li>
-                        <li>&nbsp;<a href="http://bluecap.se/" title="Bluecap" class="img icon">Bluecap</a></li>
+                        <li>&nbsp;<a href="https://bluecap.se/" title="Bluecap" class="img icon">Bluecap</a></li>
                         <li><a href="{{ base_url }}behind-the-scenes/" title="Behind the scenes">Behind the scenes</a></li>
                         <li><a href="{{ base_url }}my-projects/" title="My projects">Projects</a></li>
                     </ul>
@@ -101,18 +103,26 @@
 
     </div>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     {% assets filters="jsmin", output="static/main.%(version)s.js",
-        "js/jquery-fancybox.min.js",
-        "js/jquery-history.min.js",
-        "js/jquery-scrollto.min.js",
         "js/jquery-placeholder.min.js",
+        "js/photoswipe.js",
         "js/javascript.js"
     %}
-    <script src="{{ ASSET_URL }}"></script>
+    <script src="{{ ASSET_URL }}" async></script>
     {% endassets %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" async></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" async></script>
 
-    <script>var _gaq=_gaq || [];_gaq.push(['_setAccount', 'UA-8420579-3']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();</script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-8420579-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-8420579-3');
+    </script>
 
 </body>
 </html>
