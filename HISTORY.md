@@ -3,6 +3,7 @@
 
 ### Next
 
+- Replaced image lightbox plugin.
 - Refactored CSS, moved normalize.css to external source.
 - Updated ribbon bounce animation performance.
 - Updated dependencies.

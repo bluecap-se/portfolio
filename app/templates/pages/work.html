@@ -45,59 +45,144 @@
         <h3>Mixtape</h3>
     </header>
     <div class="grid_7 alpha">
-        <ul class="gallery">
+        <ul class="gallery" itemscope itemtype="https://schema.org/ImageGallery">
             <li>
-                <a rel="work_blocket" href="{{ url_for('static', filename='images/static/shopping_clothing.png') }}" title="Advanced clothing category">
-                    <img src="{{ url_for('static', filename='images/static/shopping_clothing.png') }}" alt="Advanced clothing category" />
-                </a>
+                <figure itemprop="associatedMedia" itemscope itemtype="https://schema.org/ImageObject">
+                    <a rel="work_blocket" href="{{ url_for('static', filename='images/static/shopping_clothing.png') }}" itemprop="contentUrl" data-size="798x622" title="Advanced clothing category">
+                        <img src="{{ url_for('static', filename='images/static/shopping_clothing.png') }}" itemprop="thumbnail" alt="Advanced clothing category" />
+                    </a>
+                </figure>
             </li>
             <li>
-                <a rel="work_blocket" href="{{ url_for('static', filename='images/static/shopping_iphone.png') }}" title="Responsive design, iPhone">
-                    <img src="{{ url_for('static', filename='images/static/shopping_iphone.png') }}" alt="Responsive design, iPhone" />
-                </a>
+                <figure itemprop="associatedMedia" itemscope itemtype="https://schema.org/ImageObject">
+                    <a rel="work_blocket" href="{{ url_for('static', filename='images/static/shopping_iphone.png') }}" itemprop="contentUrl" data-size="365x729" title="Responsive design, iPhone">
+                        <img src="{{ url_for('static', filename='images/static/shopping_iphone.png') }}" itemprop="thumbnail" alt="Responsive design, iPhone" />
+                    </a>
+                </figure>
             </li>
             <li>
-                <a rel="work_blocket" href="{{ url_for('static', filename='images/static/shopping_ipad.png') }}" title="Responsive design, iPad">
-                    <img src="{{ url_for('static', filename='images/static/shopping_ipad.png') }}" alt="Responsive design, iPad" />
-                </a>
-            </li>
-        </ul>
-
-        <ul class="gallery">
-            <li>
-                <a rel="work_bluecap" href="{{ url_for('static', filename='images/static/blu1.png') }}" title="Calendar">
-                    <img src="{{ url_for('static', filename='images/static/blu1.png') }}" alt="Bluecap calendar" />
-                </a>
-            </li>
-            <li>
-                <a rel="work_bluecap" href="{{ url_for('static', filename='images/static/blu2.png') }}" title="Calendar again">
-                    <img src="{{ url_for('static', filename='images/static/blu2.png') }}" alt="Bluecap calendar, advanced functions" />
-                </a>
-            </li>
-            <li>
-                <a rel="work_bluecap" href="{{ url_for('static', filename='images/static/blu3.png') }}" title="Touch screen system">
-                    <img src="{{ url_for('static', filename='images/static/blu3.png') }}" alt="Bluecap touch screen system" />
-                </a>
+                <figure itemprop="associatedMedia" itemscope itemtype="https://schema.org/ImageObject">
+                    <a rel="work_blocket" href="{{ url_for('static', filename='images/static/shopping_ipad.png') }}" itemprop="contentUrl" data-size="786x535" title="Responsive design, iPad">
+                        <img src="{{ url_for('static', filename='images/static/shopping_ipad.png') }}" itemprop="thumbnail" alt="Responsive design, iPad" />
+                    </a>
+                </figure>
             </li>
         </ul>
 
         <ul class="gallery">
             <li>
-                <a rel="work_awork" href="{{ url_for('static', filename='images/static/ac1.png') }}" title="Index page">
-                    <img src="{{ url_for('static', filename='images/static/ac1.png') }}" alt="Index page" />
-                </a>
+                <figure itemprop="associatedMedia" itemscope itemtype="https://schema.org/ImageObject">
+                    <a rel="work_bluecap" href="{{ url_for('static', filename='images/static/blu1.png') }}" itemprop="contentUrl" data-size="935x514" title="Calendar">
+                        <img src="{{ url_for('static', filename='images/static/blu1.png') }}" itemprop="thumbnail" alt="Bluecap calendar" />
+                    </a>
+                </figure>
             </li>
             <li>
-                <a rel="work_awork" href="{{ url_for('static', filename='images/static/ac2.png') }}" title="CMS, change the external menu">
-                    <img src="{{ url_for('static', filename='images/static/ac2.png') }}" alt="CMS, change the external menu" />
-                </a>
+                <figure itemprop="associatedMedia" itemscope itemtype="https://schema.org/ImageObject">
+                    <a rel="work_bluecap" href="{{ url_for('static', filename='images/static/blu2.png') }}" itemprop="contentUrl" data-size="993x684" title="Calendar again">
+                        <img src="{{ url_for('static', filename='images/static/blu2.png') }}" itemprop="thumbnail" alt="Bluecap calendar, advanced functions" />
+                    </a>
+                </figure>
             </li>
             <li>
-                <a rel="work_awork" href="{{ url_for('static', filename='images/static/ac3.png') }}" title="CMS, handle news and newsletters">
-                    <img src="{{ url_for('static', filename='images/static/ac3.png') }}" alt="CMS, handle news and newsletters" />
-                </a>
+                <figure itemprop="associatedMedia" itemscope itemtype="https://schema.org/ImageObject">
+                    <a rel="work_bluecap" href="{{ url_for('static', filename='images/static/blu3.png') }}" itemprop="contentUrl" data-size="976x688" title="Touch screen system">
+                        <img src="{{ url_for('static', filename='images/static/blu3.png') }}" itemprop="thumbnail" alt="Bluecap touch screen system" />
+                    </a>
+                </figure>
+            </li>
+        </ul>
+
+        <ul class="gallery">
+            <li>
+                <figure itemprop="associatedMedia" itemscope itemtype="https://schema.org/ImageObject">
+                    <a rel="work_awork" href="{{ url_for('static', filename='images/static/ac1.png') }}" itemprop="contentUrl" data-size="1060x1070" title="Index page">
+                        <img src="{{ url_for('static', filename='images/static/ac1.png') }}" itemprop="thumbnail" alt="Index page" />
+                    </a>
+                </figure>
+            </li>
+            <li>
+                <figure itemprop="associatedMedia" itemscope itemtype="https://schema.org/ImageObject">
+                    <a rel="work_awork" href="{{ url_for('static', filename='images/static/ac2.png') }}" itemprop="contentUrl" data-size="1070x1114" title="CMS, change the external menu">
+                        <img src="{{ url_for('static', filename='images/static/ac2.png') }}" itemprop="thumbnail" alt="CMS, change the external menu" />
+                    </a>
+                </figure>
+            </li>
+            <li>
+                <figure itemprop="associatedMedia" itemscope itemtype="https://schema.org/ImageObject">
+                    <a rel="work_awork" href="{{ url_for('static', filename='images/static/ac3.png') }}" itemprop="contentUrl" data-size="1176x923" title="CMS, handle news and newsletters">
+                        <img src="{{ url_for('static', filename='images/static/ac3.png') }}" itemprop="thumbnail" alt="CMS, handle news and newsletters" />
+                    </a>
+                </figure>
             </li>
         </ul>
     </div>
 </article>
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+	<!-- Background of PhotoSwipe.
+		 It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+	<!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+		<!-- Container that holds slides.
+			PhotoSwipe keeps only 3 of them in the DOM to save memory.
+			Don't modify these 3 pswp__item elements, data is added later on. -->
+		<div class="pswp__container">
+			<div class="pswp__item"></div>
+			<div class="pswp__item"></div>
+			<div class="pswp__item"></div>
+		</div>
+
+		<!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+		<div class="pswp__ui pswp__ui--hidden">
+
+			<div class="pswp__top-bar">
+
+				<!--  Controls are self-explanatory. Order can be changed. -->
+
+				<div class="pswp__counter"></div>
+
+				<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+				<button class="pswp__button pswp__button--share" title="Share"></button>
+
+				<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+				<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+				<!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+				<!-- element will get class pswp__preloader--active when preloader is running -->
+				<div class="pswp__preloader">
+					<div class="pswp__preloader__icn">
+					  <div class="pswp__preloader__cut">
+					    <div class="pswp__preloader__donut"></div>
+					  </div>
+					</div>
+				</div>
+			</div>
+
+	        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+				<div class="pswp__share-tooltip"></div>
+	        </div>
+
+			<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+			</button>
+
+			<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+			</button>
+
+			<div class="pswp__caption">
+				<div class="pswp__caption__center"></div>
+			</div>
+
+	    </div>
+
+	</div>
+
+</div>
 {% endblock %}
