@@ -3,7 +3,8 @@
 
 ### Next
 
-- Added work images to mixtape. 
+- Enhanced ribbon pulling mechanism.
+- Added work images to mixtape.
 - Replaced image lightbox plugin.
 - Refactored CSS, moved normalize.css to external source.
 - Updated ribbon bounce animation performance.

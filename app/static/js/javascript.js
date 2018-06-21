@@ -57,7 +57,7 @@
 					Bluecap.up = 0;
 					$("body").removeClass("up");
 					_handle.unbind();
-				} else if (this.pos === 0) {
+				} else if (Bluecap._pos === 0) {
 					_open = false;
 					_handle.toggleClass("animate");
 				}
@@ -73,7 +73,7 @@
 					_startPos = _pos = 0;
 					_startDelta = e.pageY - _pos;
 
-					_handle.bind("mousemove", mouseMove).bind("mouseup", mouseUp);
+					$("body").bind("mousemove", mouseMove).bind("mouseup", mouseUp);
 			});
 
 			var mouseMove = function(e) {
@@ -91,7 +91,7 @@
 			var mouseUp = function(e) {
 				_handle.toggleClass("animate");
 				var strokeLength = _pos - _startPos;
-				strokeLength*= strokeLength < 0 ? -1 : 1;
+				strokeLength *= strokeLength < 0 ? -1 : 1;
 
 				if (strokeLength > 3) {
 					_duration = 200;
@@ -102,7 +102,7 @@
 					}
 				}
 
-				_handle.unbind("mouseup").unbind("mousemove");
+				$("body").unbind("mouseup").unbind("mousemove");
 			};
 
 		}
