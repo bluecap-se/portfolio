@@ -3,6 +3,9 @@
 
 ### Next
 
+
+### 0.2.0
+
 - Enhanced ribbon pulling mechanism.
 - Added work images to mixtape.
 - Replaced image lightbox plugin.
