@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from flask import Flask
-from flask.ext.assets import Environment
+from flask_assets import Environment
 from app.config import config
 from app.flask_app import bp
 from app.serve import TimedRequestHandler

@@ -16,38 +16,11 @@
 				$content = $("#content");
 			$("input[placeholder], textarea[placeholder]").placeholder();
 
-			// Load menu content by AJAX
-			$(".menu").delegate("a", "click", function(e) {
-
-				e.preventDefault();
-				e.stopPropagation();
-				var href = $(this).attr("href"),
-					title = $(this).attr("title");
-
-				$.ajax({
-					type: "GET",
-					url: href + "js/",
-					cache: false,
-					dataType: "html"
-				})
-				.done(function(msg){
-					$content.html(msg);
-					$.scrollTo("#content", 500);
-					History.pushState(null, null, href);
-					document.title = "Portfolio - " + title;
-				})
-				.fail(function() {
-					window.location.href = href;
-				});
-			
-			});
-
-
 			// Ribbon animation
 			var $ribbon = $("#ribbon");
 			Bluecap.dragRibbon($ribbon);
 
-			// Fuck, no native support, oh well, lets fall back
+			// No native support
 			if (!Modernizr.cssanimations) {
 				var anim_down = function() {
 					if (Bluecap.up) $ribbon.animate({top: "10px"}, 500, anim_up);
@@ -58,12 +31,6 @@
 
 				$ribbon.animate({top: "10px"}, 500, anim_up);
 			}
-
-			// Image gallery
-			$(".gallery a").fancybox({
-				openEffect	: 'none',
-				closeEffect	: 'none'
-			});
 
 		},
 
@@ -90,7 +57,7 @@
 					Bluecap.up = 0;
 					$("body").removeClass("up");
 					_handle.unbind();
-				} else if (this.pos === 0) {
+				} else if (Bluecap._pos === 0) {
 					_open = false;
 					_handle.toggleClass("animate");
 				}
@@ -99,16 +66,16 @@
 			_handle.bind("mousedown", function(e) {
 					e.preventDefault();
 					e.stopPropagation();
-					
+
 					$(this).toggleClass("animate");
 
 					_duration = 0;
 					_startPos = _pos = 0;
 					_startDelta = e.pageY - _pos;
-					
-					_handle.bind("mousemove", mouseMove).bind("mouseup", mouseUp);
+
+					$("body").bind("mousemove", mouseMove).bind("mouseup", mouseUp);
 			});
-			
+
 			var mouseMove = function(e) {
 				var delta = e.pageY - _startDelta;
 
@@ -117,15 +84,15 @@
 				} else if (delta > _openPos) {
 					delta = _openPos;
 				}
-				
+
 				setPosition(delta);
 			};
 
 			var mouseUp = function(e) {
 				_handle.toggleClass("animate");
 				var strokeLength = _pos - _startPos;
-				strokeLength*= strokeLength < 0 ? -1 : 1;
-				
+				strokeLength *= strokeLength < 0 ? -1 : 1;
+
 				if (strokeLength > 3) {
 					_duration = 200;
 					if (_pos == _openPos || !_open) {
@@ -135,7 +102,7 @@
 					}
 				}
 
-				_handle.unbind("mouseup").unbind("mousemove");
+				$("body").unbind("mouseup").unbind("mousemove");
 			};
 
 		}
