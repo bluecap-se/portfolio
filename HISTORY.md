@@ -3,6 +3,7 @@
 
 ### Next
 
+- Switched dependency manager from Pip to Pipenv.
 
 ### 0.2.0
 

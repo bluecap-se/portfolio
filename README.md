@@ -8,13 +8,14 @@
 
 ## Install
 
-Install from source
+### Install from source
+
+This project relies on [Pipenv](https://docs.pipenv.org/), ensure that it is installed with `pip install pipenv` first.
 
 ```bash
 $ git clone git@github.com:bluecap-se/portfolio.git
 $ cd portfolio
-$ pip install -r requirements.txt
-$ pip install -e .
+$ pipenv install --two
 ```
 
 ## Usage
