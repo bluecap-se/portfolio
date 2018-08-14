@@ -12,17 +12,18 @@
 
 This project relies on [Pipenv](https://docs.pipenv.org/), ensure that it is installed with `pip install pipenv` first.
 
-```bash
+```
 $ git clone git@github.com:bluecap-se/portfolio.git
 $ cd portfolio
 $ pipenv install --two
+$ pipenv shell
 ```
 
 ## Usage
 
 Run the webserver with:
 
-```bash
+```
 $ python wsgi.py
 
 ```
