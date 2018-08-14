@@ -16,4 +16,4 @@ Flask-DebugToolbar = "==0.10.1"
 [dev-packages]
 
 [requires]
-python_version = "3.6"
+python_version = "2.7"
