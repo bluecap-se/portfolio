@@ -150,7 +150,7 @@
 		}
 
 		figure.img {
-			margin-top: 1em;
+			margin: 1em 0 0 0;
 			padding: 1px;
 			border: 1px solid #ccc;
 			overflow: hidden;
@@ -184,11 +184,26 @@
 
 			figure {
 				float: right;
-				margin: 0
+				margin: 0;
+				position: relative;
+				overflow: hidden;
+
+				&:hover > figcaption {
+					bottom: 0;
+				}
 			}
 
 			figcaption {
 				width: 120px;
+				position: absolute;
+				bottom: -25px;
+				text-align: center;
+				font: 9pt Arial, Helvetica, sans-serif;
+				background: #333;
+				padding: 4px 0;
+				color: #fff;
+				.transition(bottom, .3s);
+				.opaticy(.8);
 			}
 		}
 

@@ -4,6 +4,12 @@
 ### Next
 
 
+### 0.3.0
+
+- Updated copy.
+- Visual bugfixes.
+- Switched dependency manager from Pip to Pipenv.
+
 ### 0.2.0
 
 - Enhanced ribbon pulling mechanism.

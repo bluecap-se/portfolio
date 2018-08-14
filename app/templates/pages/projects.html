@@ -4,96 +4,69 @@
 {% block title %} {{ page_title }} {% endblock %}
 
 {% block content %}
-<h2>My projects</h2>
+<h2>Open source projects</h2>
 <article>
 	<header>
-		<h3>Glöggle</h3>
-		<time datetime="2011-11-30" title="Release date">Nov, 2011</time>
+		<h3>Sneak</h3>
 	</header>
 	<div class="grid_7 alpha">
-		<figure class="img">
-			<a href="http://www.glöggle.com" target="_blank" title="Visit Glöggle.com">
-				<img src="{{ url_for('static', filename='images/static/gloggle.jpg') }}" alt="" width="396" height="267" />
-			</a>
-			<figcaption>Are you feeling Glöggly?</figcaption>
-		</figure>
 		<p>
-			Glöggle was created as a funny site by me and two co-workers at Blocket. It is a single webpage, created in HTML5 and CSS3. The design was homemade by me.
+			A version of the famous snake game that we used to love and play on our Nokia phones, but this time in your terminal. Download the project from PyPi.
 		</p>
 		<p>
-			<a href="http://glöggle.com" target="_blank" class="external" title="Visit Glöggle.com">Visit Glöggle.com</a>
+			<a href="https://pypi.org/project/sneak-game/" target="_blank" class="external" title="Visit project on PyPi">Visit project on PyPi</a>
+		</p>
+	</div>
+    <aside class="grid_3 omega" role="complementary">
+        <figure>
+            <img src="{{ url_for('static', filename='images/static/open-source.png') }}" width="120" height="120" alt="" />
+            <figcaption>Open source</figcaption>
+        </figure>
+    </aside>
+</article>
+
+<article>
+	<header>
+		<h3>MiniMe</h3>
+	</header>
+	<div class="grid_7 alpha">
+		<p>
+			MiniMe is a link shortening web app similar to Bitly. It utilises a Django backend with Python 3. It is published on Heroku infrastructure.
+		</p>
+		<p>
+			[Link coming soon]
 		</p>
 	</div>
 </article>
+
 <article>
 	<header>
-		<h3>Proghetto</h3>
-		<time datetime="2008-06-04" title="Release date">Jun, 2008</time>
+		<h3>Portfolio</h3>
 	</header>
 	<div class="grid_7 alpha">
-		<figure class="img">
-			<a href="http://www.bluecap.se/demo/proghetto/" target="_blank" title="View demo of Proghetto">
-				<img src="{{ url_for('static', filename='images/static/proghetto.jpg') }}" alt="" width="396" height="301" />
-			</a>
-			<figcaption>Managing projects like a baws!</figcaption>
-		</figure>
 		<p>
-			This web application was built by me and four other as a university project in system development. It is a project managing system for multiple users. Among many things, it contains a calendar, gantt scheme, file management and statistics.
+			This website. Running a Python Flask server in Docker. It is statically published on Github Pages.
 		</p>
 		<p>
-			We were given the task to create something different, and since the entire group consisted of non-swedes - we decided to go ghetto-style. The name <i>Proghetto</i> - for example - comes from the italian word <i>progetto</i>, which means <i>project</i>. Both the language and design is influensed by the ghetto style, while still maintaining the funcionality required for the task.
-		</p>
-		<p>
-			Proghetto was built with a backend containing PHP and MySQL. Frontend contains XHTML 1.0, CSS and Javascript. The design was created in Photoshop CS by me.
-		</p>
-		<p>
-			<a href="http://www.bluecap.se/demo/proghetto/" target="_blank" class="external" title="View demo of Proghetto">View a demo</a>
+			<a href="https://portfolio.bluecap.se" target="_blank" class="external" title="Visit portfolio.bluecap.se">Visit portfolio.bluecap.se</a>
 		</p>
 	</div>
 </article>
+
 <article>
 	<header>
-		<h3>Vetenskapsrådet</h3>
-		<time datetime="2009-09-15" title="Release date">Sep, 2009</time>
+		<h3>Yarr!</h3>
 	</header>
 	<div class="grid_7 alpha">
-		<figure class="img">
-			<a href="http://www.bluecap.se/demo/vr/" target="_blank" title="View a demo of VR">
-				<img src="{{ url_for('static', filename='images/static/vr.jpg') }}" alt="" width="396" height="237" />
-			</a>
-			<figcaption>Vetenskapsrådet got a facelift</figcaption>
-		</figure>
 		<p>
-			This example website was built by me and three other as a university project in webdesign. The idea was to use an existing website and make it better, with main focus on accessibility.
+			Yarr! is a small project that adds (another) 'I am lucky'-feature to The Pirate Bay.
 		</p>
 		<p>
-			The website was build in semantic XHTML and CSS with focus on SEO and accessibility. The design was made in PhotoShop by me.
+			The client is done in Python and published on PyPi.<br>The backend is done in Node.js and is published to NPM.
 		</p>
 		<p>
-			<a href="http://www.bluecap.se/demo/vr/" target="_blank" class="external" title="View a demo of VR">View a demo</a>
-		</p>
-	</div>
-</article>
-<article>
-	<header>
-		<h3>Survey</h3>
-		<time datetime="2009-10-02" title="Release date">Oct, 2009</time>
-	</header>
-	<div class="grid_7 alpha">
-		<figure class="img">
-			<a href="http://www.bluecap.se/demo/survey/" target="_blank" title="View a demo of the survey app">
-				<img src="{{ url_for('static', filename='images/static/survey.jpg') }}" alt="" width="396" height="237" />
-			</a>
-			<figcaption>Easy to create, publish and view results</figcaption>
-		</figure>
-		<p>
-			The survey application was made for a client through my company Bluecap. Here, you can create new surveys, send them to people so they can answer online, and see the result statistics and answers.
-		</p>
-		<p>
-			The application has a backend built in PHP with MySQL as database. With XHTML, CSS and Javascript as frontend.
-		</p>
-		<p>
-			<a href="http://www.bluecap.se/demo/survey/" target="_blank" class="external" title="View a demo of the survey app">View a demo</a>
+			<a href="https://pypi.org/project/yarr.client/" target="_blank" class="external" title="Visit client project on PyPi">Visit client project on PyPi</a><br>
+			<a href="https://www.npmjs.com/package/yarr" target="_blank" class="external" title="Visit backend project on NPM">Visit backend project on NPM</a>
 		</p>
 	</div>
 </article>
