@@ -8,22 +8,26 @@
 
 ## Install
 
-Install from source
+### Install from source
 
-```bash
+This project relies on [Pipenv](https://docs.pipenv.org/), ensure that it is installed with `pip install pipenv` first.
+
+```
 $ git clone git@github.com:bluecap-se/portfolio.git
 $ cd portfolio
-$ pip install -r requirements.txt
-$ pip install -e .
+$ pipenv install --two
+$ pipenv shell
 ```
 
 ## Usage
 
-```bash
+Run the webserver with:
+
+```
 $ python wsgi.py
 
 ```
 
 ## License
 
-Published under [MIT License](https://github.com/bluecap-se/sneak/portfolio/master/LICENSE).
+Published under [MIT License](https://github.com/bluecap-se/portfolio/master/LICENSE).

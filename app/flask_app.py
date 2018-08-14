@@ -10,7 +10,7 @@ PAGES = {
     'behind-the-scenes': ('use_cases', 'Behind the scenes'),
     'my-work-experience': ('work', 'My work experience'),
     'about-me': ('about', 'About me'),
-    'my-projects': ('projects', 'My Projects')
+    'my-projects': ('projects', 'Open source projects')
 }
 
 
@@ -26,7 +26,7 @@ def pages(page, ajax):
     keys = {
         'include': ajax is not False,
         'base_url': config.get('app').get('base_dir'),
-        'page_title': '- ' + title if title else title
+        'page_title': ' - ' + title if title else title
     }
 
     return render_template('pages/{}.html'.format(tmpl), **keys)
