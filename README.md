@@ -20,6 +20,8 @@ $ pipenv install --two
 
 ## Usage
 
+Run the webserver with:
+
 ```bash
 $ python wsgi.py
 
@@ -27,4 +29,4 @@ $ python wsgi.py
 
 ## License
 
-Published under [MIT License](https://github.com/bluecap-se/sneak/portfolio/master/LICENSE).
+Published under [MIT License](https://github.com/bluecap-se/portfolio/master/LICENSE).
