@@ -28,6 +28,20 @@ $ python wsgi.py
 
 ```
 
+### Local testing
+
+```bash
+$ python wsgi.py --config local
+
+```
+
+### Production
+
+```bash
+$ python wsgi.py --config prod
+
+```
+
 ## License
 
 Published under [MIT License](https://github.com/bluecap-se/portfolio/master/LICENSE).
