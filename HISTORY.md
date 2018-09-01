@@ -4,6 +4,10 @@
 ### Next
 
 
+### 0.3.1
+
+- Updated projects section.
+
 ### 0.3.0
 
 - Updated copy.

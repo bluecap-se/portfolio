@@ -33,13 +33,13 @@
                     <p>Hmm... so reverse psychology works on you?</p>
                     <p>Then don't&nbsp;<b>hire me</b>, and don't&nbsp;<b>use the form</b>&nbsp;on the right!</p>
                 </div>
-                <form action="https://www.bluecap.se/portfolio/email" method="post" class="grid_8 omega">
+                <form action="javascript:return false" method="post" class="grid_8 omega">
                     <fieldset>
                         <legend class="hide">Contact me by email</legend>
                         <input type="text" name="name" class="name placeholder" id="frm_name" placeholder="Name:" required />
                         <input type="text" name="email" class="email placeholder" id="frm_email" placeholder="E-mail:" required />
                         <textarea name="msg" cols="40" rows="4" class="msg placeholder" id="frm_msg" placeholder="Message:"></textarea>
-                        <input type="submit" value="Contact!" class="submit" />
+                        <input type="submit" value="Contact!" class="submit" onclick="alert('Temporarily disabled.');return false" />
                     </fieldset>
                 </form>
             </div>
