@@ -4,6 +4,10 @@
 ### Next
 
 
+### 0.4.0
+
+- Updated work section with new companies.
+
 ### 0.3.1
 
 - Updated projects section.

@@ -6,9 +6,9 @@ name = "pypi"
 [packages]
 configobj = "==5.0.6"
 cssmin = "==0.2.0"
-gunicorn = "==19.8.1"
+gunicorn = "==19.9.0"
 jsmin = "==2.2.2"
-Flask = "==1.0.2"
+Flask = "==1.1.1"
 Flask-Assets = "==0.12"
 Flask-DebugToolbar = "==0.10.1"
 "e1839a8" = {path = ".", editable = true}
@@ -16,4 +16,4 @@ Flask-DebugToolbar = "==0.10.1"
 [dev-packages]
 
 [requires]
-python_version = "2.7"
+python_version = "3.7"
