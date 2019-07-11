@@ -10,12 +10,12 @@
 
 ### Install from source
 
-This project relies on [Pipenv](https://docs.pipenv.org/), ensure that it is installed with `pip install pipenv` first.
+This project relies on [Pipenv](https://docs.pipenv.org/), ensure that it is installed with `pip3 install pipenv` first.
 
 ```
 $ git clone git@github.com:bluecap-se/portfolio.git
 $ cd portfolio
-$ pipenv install --two
+$ pipenv install --three
 $ pipenv shell
 ```
 
