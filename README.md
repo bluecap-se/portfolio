@@ -1,7 +1,7 @@
 # Portfolio
 
 ![Status](https://img.shields.io/badge/status-stable-brightgreen.svg)
-![PyPI - Python Version](https://img.shields.io/badge/python-2.7-blue.svg)
+![PyPI - Python Version](https://img.shields.io/badge/python-3.7-blue.svg)
 ![Platform](https://img.shields.io/badge/platform-win%20%7C%20lin%20%7C%20osx-lightgrey.svg)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
