@@ -23,7 +23,7 @@ $ pipenv shell
 
 Run the webserver with:
 
-```
+```bash
 $ python wsgi.py
 
 ```
